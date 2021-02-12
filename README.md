@@ -1,0 +1,2 @@
+# NED-BOT
+NED is a bot that I developed in the past months, it was intended to be a public bot for everyone but I stopped maintaining it.  To execute its code you must go to the config file, write your token and choose a prefix.  Then, having NODE installed, you run it in the nedbot file and your bot will be working.   This BOT was made with the Discord.js v12 library some months ago, I think some commands don't work anymore but I will fix them in a while.  Translated with www.DeepL.com/Translator (free version)
