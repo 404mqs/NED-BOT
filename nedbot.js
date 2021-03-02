@@ -23,8 +23,6 @@ const Gamedig = require('gamedig');
 let repetir = new Map() 
 
 
-
-
 client.commands = new Discord.Collection();
 const prefix = config.prefix;
 
@@ -37,25 +35,30 @@ client.on('ready', () => {
     client.user.setActivity(`7 | ✨NED`, { type: 'WATCHING' });
     	
 });
+
+
 client.on('message', async message => {
-    if(message.member.roles.cache.find(rol => rol.name === 'Blacklist')){
-return;
-}
-	if(message.member.roles.cache.find(rol => rol.name === 'muted')){
-message.delete
+    if(message.member.roles.cache.find(rol => rol.name === 'Blacklist'))
+    {
+    return;
+    }
+	if(message.member.roles.cache.find(rol => rol.name === 'muted'))
+    {
+    message.delete
 	}
-let mencionado = message.mentions.users.first()
+    let mencionado = message.mentions.users.first()
     if(!mencionado){return;}
 	if (message.author.bot) return;
-    if(mencionado.id === client.user.id){
+    if(mencionado.id === client.user.id)
+        {
 		
-	const embed1 = new Discord.MessageEmbed()
+	    const embed1 = new Discord.MessageEmbed()
 	   .setAuthor("NED", client.user.avatarURL())
 	   .setColor("YELLOW")
 	   .setFooter("Ned Bot")
 	   .setThumbnail("https://jonmgomes.com/wp-content/uploads/2020/03/Liquid-Lightbulb-Animation-V2-800x600-1.gif")
        .setDescription("Hola! Gracias por usar NED BOT. \n Ned es un bot especializado en enviar cosas divertidas para animar tu servidor. \n Para ver la lista de comandos puedes usar `7cmd`.")
-            message.channel.send(embed1)	
+        message.channel.send(embed1)	
 		
 		}
 })
@@ -1862,7 +1865,7 @@ let embed = new Discord.MessageEmbed()//creamos el embed
 
 		
 	  unturnedStats.load({
-      key: 'C07C1173208D23652E53B13E1B586666',
+      key: '',
 	  id: id 
 		  
 	  
